@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="/favicon.png" />
+        <link rel="stylesheet" href="/sab-stylesheet.css" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="content-security-policy" content="">
+		<link rel="preload" as="script" crossorigin="anonymous" href="/_app/immutable/entry/start.949d255c.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="/_app/immutable/chunks/index.a8e850eb.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="/_app/immutable/chunks/singletons.4a7e45f2.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="/_app/immutable/chunks/index.4613fe37.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="/_app/immutable/chunks/paths.75a8223a.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="/_app/immutable/entry/app.0f269494.mjs">
+    </head>
+    <body>
+        <div>
+			<script>
+				{
+					__sveltekit_13gzfn7 = {
+						env: {},
+						assets: "",
+						element: document.currentScript.parentElement
+					};
+
+					Promise.all([
+						import("/_app/immutable/entry/start.949d255c.mjs"),
+						import("/_app/immutable/entry/app.0f269494.mjs")
+					]).then(([kit, app]) => {
+						kit.start(app, __sveltekit_13gzfn7.element);
+					});
+
+					if ('serviceWorker' in navigator) {
+						addEventListener('load', function () {
+							navigator.serviceWorker.register('/service-worker.js');
+						});
+					}
+				}
+			</script>
+		</div>
+    </body>
+</html>
